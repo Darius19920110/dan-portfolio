@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { Tab, Tabs, Row } from "react-bootstrap";
 
-import Data_analytics from "../BadgeCards/google/data_analytics";
+import Data_analytics from "../BadgeCards/google/Data_analytics";
 import DataEngineering from "../BadgeCards/ibm/DataEngineering";
 import DatabaseSql from "../BadgeCards/ibm/DatabaseSql";
 import LinuxCommands from "../BadgeCards/ibm/LinuxCommands";
