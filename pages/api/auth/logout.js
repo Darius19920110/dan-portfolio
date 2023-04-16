@@ -10,7 +10,7 @@ export default async function (req, res) {
   } else {
     const serialized = serialize("OursiteJWT", null, {
       httpOnly: true,
-      secure: process.env.NODE_ENV !== "development",
+      secure: process.env.NEXT_PUBLIC_NODE_ENV !== "development",
       sameSite: "strict",
       maxAge: -1,
       path: "/",
