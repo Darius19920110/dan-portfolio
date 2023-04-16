@@ -230,6 +230,16 @@ img.mfp-img {
   .profile_img {
     margin-top: 14.5rem;
   }
+  .col.col-d-6.col-t-6.col-m-12.mt-5 {
+    padding-top: 0 !important;
+    margin: 0 !important;
+  }
+  .skills-list.list.om-t {
+    margin: 0 !important;
+  }
+  ul {
+    padding-top: 0 !important;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 561px) {
@@ -241,5 +251,15 @@ img.mfp-img {
   }
   .lnk {
     line-height: 2.2rem;
+  }
+  .col.col-d-6.col-t-6.col-m-12.mt-5 {
+    padding-top: 0 !important;
+    margin: 0 !important;
+  }
+  .skills-list.list.om-t {
+    margin: 0 !important;
+  }
+  ul {
+    padding-top: 0 !important;
   }
 }
