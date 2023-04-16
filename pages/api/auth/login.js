@@ -2,7 +2,7 @@ import * as jose from "jose";
 import { TextEncoder } from "text-encoder";
 import { serialize } from "cookie";
 
-const secret = new TextEncoder().encode(process.env.SECRET);
+const secret = new TextEncoder().encode("SECRET12223344");
 const alg = "HS256";
 
 export default async function (req, res) {
@@ -19,7 +19,7 @@ export default async function (req, res) {
 
     const serialized = serialize("OursiteJWT", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV !== "development",
+      secure: true,
       sameSite: "strict",
       maxAge: 60 * 60 * 24 * 30,
       path: "/",
