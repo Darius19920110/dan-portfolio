@@ -2,13 +2,16 @@ import * as jose from "jose";
 import { TextEncoder } from "text-encoder";
 import { serialize } from "cookie";
 
-const secret = new TextEncoder().encode("SECRET12223344");
+const secret = new TextEncoder().encode(process.env.SECRET);
 const alg = "HS256";
 
 export default async function (req, res) {
   const { username, password } = req.body;
 
-  if (username.toLowerCase() === "guest" && password === "Summer2023") {
+  if (
+    username.toLowerCase() === process.env.USERNAME &&
+    password === process.env.PASSWORD
+  ) {
     const token = await new jose.SignJWT({ "urn:example:claim": true })
       .setProtectedHeader({ alg })
       .setIssuedAt()
@@ -19,7 +22,7 @@ export default async function (req, res) {
 
     const serialized = serialize("OursiteJWT", token, {
       httpOnly: true,
-      secure: true,
+      secure: process.env.NODE_ENV !== "development",
       sameSite: "strict",
       maxAge: 60 * 60 * 24 * 30,
       path: "/",

@@ -13,7 +13,7 @@ export async function middleware(req) {
     }
 
     try {
-      const secret = new TextEncoder().encode("SECRET12223344");
+      const secret = new TextEncoder().encode(process.env.SECRET);
 
       await jose.jwtVerify(jwt, secret, {
         issuer: "urn:example:issuer",
@@ -29,7 +29,7 @@ export async function middleware(req) {
   if (req.nextUrl.pathname.startsWith("/")) {
     if (jwt) {
       try {
-        const secret = new TextEncoder().encode("SECRET12223344");
+        const secret = new TextEncoder().encode(process.env.SECRET);
 
         await jose.jwtVerify(jwt, secret, {
           issuer: "urn:example:issuer",
