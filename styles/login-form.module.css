@@ -1,0 +1,33 @@
+.login_box {
+  width: 340px;
+
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 2px;
+  margin-bottom: 6px;
+  background: #eee;
+}
+.hcustom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .hcustom {
+    height: 100%;
+  }
+}
+
+.grey_color {
+  background-color: #e0e0e0;
+}
