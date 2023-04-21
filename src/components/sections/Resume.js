@@ -79,7 +79,7 @@ const ResumeSection = () => {
                 <div className="company">Computer Science</div>
               </div>
               <div className="resume-item border-line-h active">
-                <div className="date">Sep 2006 - Sep 201</div>
+                <div className="date">Sep 2006 - Sep 2010</div>
                 <div className="name">
                   IT vocational secondary school and College
                 </div>
@@ -114,40 +114,3 @@ const ResumeSection = () => {
   );
 };
 export default ResumeSection;
-
-{
-  /* <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
-  <div className="resume-title border-line-h">
-    <div className="icon">
-      <i className="fa fa-briefcase" />
-    </div>
-    <div className="name">Experience</div>
-  </div>
-  <div className="resume-items">
-    <div className="resume-item border-line-h active">
-      <div className="date">2013 - Present</div>
-      <div className="name">Art Director</div>
-      <div className="company">Facebook Inc.</div>
-      <p>
-        Collaborate with creative and development teams on the execution of
-        ideas.
-      </p>
-    </div>
-    <div className="resume-item border-line-h">
-      <div className="date">2011 - 2012</div>
-      <div className="name">Front-end Developer</div>
-      <div className="company">Google Inc.</div>
-      <p>
-        Monitored technical aspects of the front-end delivery for several
-        projects.
-      </p>
-    </div>
-    <div className="resume-item">
-      <div className="date">2009 - 2010</div>
-      <div className="name">Senior Developer</div>
-      <div className="company">Abc Inc.</div>
-      <p>Optimize website performance using latest technology.</p>
-    </div>
-  </div>
-</div>; */
-}

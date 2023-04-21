@@ -40,7 +40,7 @@ const home = () => {
           {/* profile buttons */}
           <div className="lnks">
             <a
-              href="https://storage.googleapis.com/projects01/Daniel_Meszaros_Resume_16-04-2023-09-37-30.pdf"
+              href="https://storage.googleapis.com/projects01/Daniel_Meszaros_Resume.pdf"
               className="lnk"
               target="_blank"
             >
